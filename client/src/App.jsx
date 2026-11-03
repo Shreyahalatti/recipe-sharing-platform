@@ -5,7 +5,7 @@ function App() {
   const [form, setForm] = useState({ title: '', description: '', ingredients: '', cuisine: '', cookTime: '', photo: '' })
   const [search, setSearch] = useState('')
 
-  const API = 'http://localhost:5000/api/recipes'
+  const API = "http://recipe-sharing-platform-wb58.onrender.com"
 
   const fetchRecipes = async () => {
     const res = await fetch(`${API}?search=${search}`)
