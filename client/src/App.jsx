@@ -5,10 +5,10 @@ function App() {
   const [form, setForm] = useState({ title: '', description: '', ingredients: '', cuisine: '', cookTime: '', photo: '' })
   const [search, setSearch] = useState('')
 
-  const API = "http://recipe-sharing-platform-wb58.onrender.com"
+  const API = "http://lreciepe-sharing-platform-wb58.onrender.com"
 
   const fetchRecipes = async () => {
-    const res = await fetch(`${API}?search=${search}`)
+    const res = await fetch("https://server-mu-six-13.vercel.app/api/recipes"))
     const data = await res.json()
     setRecipes(data)
   }
